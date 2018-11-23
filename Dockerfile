@@ -1,4 +1,4 @@
-FROM %%BASE_IMAGE%%
+FROM homeassistant/armhf-base
 
 ENV LANG C.UTF-8
 
