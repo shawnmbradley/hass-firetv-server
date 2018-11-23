@@ -1,0 +1,22 @@
+{
+  "name": "FireTV Server",
+  "version": "1.0",
+  "slug": "firetv-server",
+  "description": "FireTV Server hass.io add-on",
+  "url": "https://github.com/shawnmbradley/hassio-addons/tree/master/firetv-server",
+  "startup": "before",
+  "boot": "auto",
+  "options": {
+    "devices": [
+      { "name": "fire_tv_name", "host": "firetv_ip_address", "port": 5555 }
+    ]
+  },
+  "schema": {
+    "devices": [
+      { "name": "str", "host": "str", "port": "int" }
+    ]
+  },
+  "ports": {
+    "5556/tcp": 5556 },
+  "image": "shawnbradley/{arch}-addon-firetv-server"
+}
